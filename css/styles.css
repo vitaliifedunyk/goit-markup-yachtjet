@@ -1,0 +1,157 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0e1823;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.container {
+  width: 1400px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* #region header */
+.header {
+  border: 1px solid #fbfbfb;
+  border-radius: 8px;
+  width: 1240px;
+  height: 48px;
+  background-color: #fbfbfb;
+  margin-top: 32px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.header-logo {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  color: #1b414b;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 91px;
+  height: 40px;
+  background-color: rgba(27, 65, 75, 0.5);
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #1b414b;
+}
+
+.header-social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* #endregion header */
+
+/* #region hero */
+.hero-title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  margin-top: 155px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.hero-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.7);
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 597px;
+}
+
+.hero-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  border-radius: 15px;
+  padding-block: 16px;
+  padding-inline: 40px;
+  width: 179px;
+  height: 52px;
+  background-color: #1b414b;
+}
+
+/* #endregion hero */

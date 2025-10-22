@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>yachtjet</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,64 +14,76 @@
   </head>
   <body>
     <!-- #region header -->
-    <header>
-      <a href="./index.html">yachtjet</a>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="header-logo">yachtjet</a>
 
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#yachts">Yachts</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-        </ul>
-      </nav>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#yachts" class="nav-link">Yachts</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          </ul>
+        </nav>
 
-      <ul class="social-icons">
-        <li class="social-icons-list">
-          <a href="https://www.instagram.com/" target="_blank">
-            <svg class="social-item-icon" width="19" height="19">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-icons-list">
-          <a href="https://www.youtube.com/" target="_blank">
-            <svg class="social-item-icon" width="19" height="19">
-              <use href="./images/icons.svg#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-icons-list">
-          <a href="https://www.facebook.com/" target="_blank">
-            <svg class="social-item-icon" width="19" height="19">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+        <div class="header-social-icons">
+          <ul class="header-social-icons">
+            <li class="header-social-icons-list">
+              <a href="https://www.instagram.com/" target="_blank">
+                <svg class="header-social-icon-svg" width="19" height="19">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-social-icons-list">
+              <a href="https://www.youtube.com/" target="_blank">
+                <svg class="header-social-icon-svg" width="19" height="19">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-social-icons-list">
+              <a href="https://www.facebook.com/" target="_blank">
+                <svg class="header-social-icon-svg" width="19" height="19">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- #endregion header -->
 
-    <!-- #region main -->
     <main>
       <!-- #region hero -->
-      <section>
-        <h1>Explore the High Seas with Our Luxury Yacht Rentals</h1>
-        <p>
-          Experience the freedom and luxury of yachting on the open seas. Choose
-          from our top-of-the-line yachts and embark on an unforgettable journey
-          surrounded by breathtaking views and state-of-the-art amenities.
-        </p>
-        <button type="button">Yacht rental</button>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">
+            Explore the High Seas with Our Luxury Yacht Rentals
+          </h1>
+
+          <p class="hero-text">
+            Experience the freedom and luxury of yachting on the open seas.
+            Choose from our top-of-the-line yachts and embark on an
+            unforgettable journey surrounded by breathtaking views and
+            state-of-the-art amenities.
+          </p>
+
+          <button type="button" class="hero-btn">Yacht rental</button>
+        </div>
       </section>
       <!-- #endregion hero -->
 
       <!-- #region about -->
       <section id="about">
         <h2>YachtJet fleet is here to take you on the ultimate adventure</h2>
+
         <h3>
           From spacious decks to state-of-the-art technology, our yachts are
           designed to provide the perfect blend of luxury and functionality.
         </h3>
+
         <p>
           Take a look at our selection below and choose the yacht that matches
           your needs and preferences.No matter which yacht you choose, our
@@ -79,6 +91,7 @@
           enjoyable. Book now and get ready for an unforgettable adventure on
           the high seas.
         </p>
+
         <img
           srcset="./images/yacht-about.jpg 1x, ./images/yacht-about@2x.jpg 2x"
           src="./images/yacht-about.jpg"
@@ -92,6 +105,7 @@
       <!-- #region yacht-selection -->
       <section id="yachts">
         <h2>Choose your dream yacht and sail away into the sunset</h2>
+
         <ul>
           <li>
             <div>
@@ -267,8 +281,9 @@
           width="768"
           height="534"
         />
-        <h2>Rent a yacht now</h2>
-        <form action="">
+
+        <form>
+          <h2>Rent a yacht now</h2>
           <input
             type="text"
             name="user-fullname"
@@ -276,6 +291,7 @@
             placeholder="Full Name"
             required
           />
+
           <input
             type="email"
             name="user-email"
@@ -283,6 +299,7 @@
             placeholder="Email"
             required
           />
+
           <input
             type="tel"
             name="user-phone"
@@ -290,6 +307,7 @@
             placeholder="Phone number"
             required
           />
+
           <textarea
             name="Comment"
             id="user-comment"
@@ -306,6 +324,7 @@
           YachtJet take pride in providing the best possible service and
           experience to our customers
         </h2>
+
         <p>
           Our customers have enjoyed unforgettable moments on our yachts. Don't
           just take our word for it - read on to find out what they have to say
@@ -321,13 +340,16 @@
               width="56"
               height="56"
             />
+
             <h3>John Wax</h3>
+
             <p>
               I rented the Lagoon 620 with my family for a week-long vacation
               and it was the best decision ever. The yacht was spacious,
               comfortable, and luxurious, and the crew took care of everything.
             </p>
           </li>
+
           <li>
             <img
               srcset="
@@ -339,7 +361,9 @@
               width="56"
               height="56"
             />
+
             <h3>Victoria Romashenko</h3>
+
             <p>
               The Sunseeker Manhattan 66 was the perfect choice for our romantic
               getaway. The yacht was beautifully designed, with all the
@@ -357,7 +381,9 @@
               width="56"
               height="56"
             />
+
             <h3>Ihor Trachuk</h3>
+
             <p>
               The Azimut 80 was the most luxurious yacht I've ever been on. The
               cabins were spacious and elegant, and the outdoor areas were
@@ -368,7 +394,6 @@
       </section>
       <!-- #endregion reviews -->
     </main>
-    <!-- #endregion main -->
 
     <!-- #region footer -->
     <footer>
@@ -386,21 +411,21 @@
         <ul class="footer-social-icons">
           <li class="footer-social-icons-list">
             <a href="https://www.instagram.com/" target="_blank">
-              <svg class="footer-social-item-icon" width="19" height="19">
+              <svg class="footer-social-icon-svg" width="19" height="19">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social-icons-list">
             <a href="https://www.youtube.com/" target="_blank">
-              <svg class="footer-social-item-icon" width="19" height="19">
+              <svg class="footer-social-icon-svg" width="19" height="19">
                 <use href="./images/icons.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social-icons-list">
             <a href="https://www.facebook.com/" target="_blank">
-              <svg class="footer-social-item-icon" width="19" height="19">
+              <svg class="footer-social-icon-svg" width="19" height="19">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
