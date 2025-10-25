@@ -228,15 +228,17 @@ button {
 
 /* #region yacht-selection */
 .selection-container {
-  margin-left: 100px;
-  margin-right: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .selection-title {
+  width: 714px;
   margin-top: 150px;
   margin-bottom: 75px;
-  margin-left: 353px;
-  margin-right: 363px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 500;
   font-size: 48px;
   line-height: 1;
@@ -323,4 +325,81 @@ button {
   letter-spacing: 0.03em;
   color: #040306;
 }
+
+.selection-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  border-radius: 15px;
+  width: 179px;
+  height: 52px;
+  display: block;
+  margin: 50px auto 0;
+}
 /* #endregion yacht-selection */
+
+/*  #region benefits */
+.benefits-title {
+  display: none;
+}
+
+.benefits-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 150px auto;
+  gap: 32px;
+}
+
+.benefits-list-container {
+  border-radius: 24px;
+  width: 768px;
+  height: 424px;
+  background-color: #1b414b;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 90px 50px;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  width: 318px;
+  height: 100px;
+}
+
+.benefits-number {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #fbfbfb;
+  border-bottom: 2px solid rgba(251, 251, 251, 0.1);
+  padding-bottom: 18px;
+}
+
+.benefits-text {
+  width: 238px;
+  height: 30px;
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  opacity: 0.8;
+}
+
+.benefits-img {
+  border-radius: 24px;
+  width: 540px;
+  height: 424px;
+}
+/*  #endregion benefits */
