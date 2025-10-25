@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>yachtjet</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- #region header -->
@@ -112,127 +116,140 @@
       <!-- #endregion about -->
 
       <!-- #region yacht-selection -->
-      <section id="yachts">
-        <h2>Choose your dream yacht and sail away into the sunset</h2>
+      <section id="yachts" class="yacht-selection">
+        <h2 class="selection-title">
+          Choose your dream yacht and sail away into the sunset
+        </h2>
 
-        <ul>
-          <li>
-            <div>
-              <img
-                srcset="
-                  ./images/yacht-selection-1.png    1x,
-                  ./images/yacht-selection-1@2x.png 2x
-                "
-                src="./images/yacht-selection-1.png"
-                alt="Luxury yacht Arrow"
-                width="360"
-                height="268"
-              />
-              <h3>Arrow</h3>
-              <p>LUXURY YAHTS</p>
-            </div>
-            <dl>
+        <div class="selection-container">
+          <ul class="selection-list">
+            <li class="selection-item">
               <div>
-                <dt>LENGTH</dt>
-                <dd>48m(155ft)</dd>
+                <img
+                  class="selection-image"
+                  srcset="
+                    ./images/yacht-selection-1.png    1x,
+                    ./images/yacht-selection-1@2x.png 2x
+                  "
+                  src="./images/yacht-selection-1.png"
+                  alt="Luxury yacht Arrow"
+                  width="360"
+                  height="268"
+                />
               </div>
-              <div>
-                <dt>BUILDER</dt>
-                <dd>Admiral</dd>
+              <div class="name-container">
+                <h3 class="selection-name">Arrow</h3>
+                <p class="selection-subname">LUXURY YACHTS</p>
               </div>
-              <div>
-                <dt>BUILT</dt>
-                <dd>2021</dd>
-              </div>
-              <div>
-                <dt>GUESTS</dt>
-                <dd>11 in 5 cabins</dd>
-              </div>
-              <div>
-                <dt>PRICE</dt>
-                <dd>€33,500,000</dd>
-              </div>
-            </dl>
-          </li>
+              <dl class="spec-list">
+                <div class="spec-container">
+                  <dt class="selection-spec">LENGTH</dt>
+                  <dd class="selection-value">48m(155ft)</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">BUILDER</dt>
+                  <dd class="selection-value">Admiral</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">BUILT</dt>
+                  <dd class="selection-value">2021</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">GUESTS</dt>
+                  <dd class="selection-value">11 in 5 cabins</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">PRICE</dt>
+                  <dd class="selection-value">€33,500,000</dd>
+                </div>
+              </dl>
+            </li>
 
-          <li>
-            <div>
-              <img
-                srcset="
-                  ./images/yacht-selection-2.png    1x,
-                  ./images/yacht-selection-2@2x.png 2x
-                "
-                src="./images/yacht-selection-2.png"
-                alt="Luxury yacht Benetti Oasis 40M BO122"
-                width="360"
-                height="268"
-              />
-              <h3>BENETTI OASIS 40M BO122</h3>
-              <p>LUXURY YAHTS</p>
-            </div>
-            <dl>
+            <li class="selection-item">
               <div>
-                <dt>LENGTH</dt>
-                <dd>41m (133ft)</dd>
+                <img
+                  class="selection-image"
+                  srcset="
+                    ./images/yacht-selection-2.png    1x,
+                    ./images/yacht-selection-2@2x.png 2x
+                  "
+                  src="./images/yacht-selection-2.png"
+                  alt="Luxury yacht Benetti Oasis 40M BO122"
+                  width="360"
+                  height="268"
+                />
               </div>
-              <div>
-                <dt>BUILDER</dt>
-                <dd>Benetti</dd>
+              <div class="name-container">
+                <h3 class="selection-name">BENETTI OASIS 40M BO122</h3>
+                <p class="selection-subname">LUXURY YACHTS</p>
               </div>
-              <div>
-                <dt>BUILT</dt>
-                <dd>2025</dd>
-              </div>
-              <div>
-                <dt>GUESTS</dt>
-                <dd>10 in 5 cabins</dd>
-              </div>
-              <div>
-                <dt>PRICE</dt>
-                <dd>€23,210,000</dd>
-              </div>
-            </dl>
-          </li>
+              <dl class="spec-list">
+                <div class="spec-container">
+                  <dt class="selection-spec">LENGTH</dt>
+                  <dd class="selection-value">41m (133ft)</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">BUILDER</dt>
+                  <dd class="selection-value">Benetti</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">BUILT</dt>
+                  <dd class="selection-value">2025</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">GUESTS</dt>
+                  <dd class="selection-value">10 in 5 cabins</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">PRICE</dt>
+                  <dd class="selection-value">€23,210,000</dd>
+                </div>
+              </dl>
+            </li>
 
-          <li>
-            <div>
-              <img
-                srcset="
-                  ./images/yacht-selection-3.png    1x,
-                  ./images/yacht-selection-3@2x.png 2x
-                "
-                src="./images/yacht-selection-3.png"
-                alt="Luxury yacht Belle Anna"
-                width="360"
-                height="268"
-              />
-              <h3>BELLE ANNA</h3>
-              <p>LUXURY YAHTS</p>
-            </div>
-            <dl>
+            <li class="selection-item">
               <div>
-                <dt>LENGTH</dt>
-                <dd>50m(155ft)</dd>
+                <img
+                  class="selection-image"
+                  srcset="
+                    ./images/yacht-selection-3.png    1x,
+                    ./images/yacht-selection-3@2x.png 2x
+                  "
+                  src="./images/yacht-selection-3.png"
+                  alt="Luxury yacht Belle Anna"
+                  width="360"
+                  height="268"
+                />
               </div>
-              <div>
-                <dt>BUILDER</dt>
-                <dd>ISA</dd>
+              <div class="name-container">
+                <h3 class="selection-name">BELLE ANNA</h3>
+                <p class="selection-subname">LUXURY YACHTS</p>
               </div>
-              <div>
-                <dt>BUILT</dt>
-                <dd>2012</dd>
-              </div>
-              <div>
-                <dt>GUESTS</dt>
-                <dd>12 in 6 cabins</dd>
-              </div>
-              <div>
-                <dt>PRICE</dt>
-                <dd>€21,000,000</dd>
-              </div>
-            </dl>
-          </li>
-        </ul>
+              <dl class="spec-list">
+                <div class="spec-container">
+                  <dt class="selection-spec">LENGTH</dt>
+                  <dd class="selection-value">50m(155ft)</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">BUILDER</dt>
+                  <dd class="selection-value">ISA</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">BUILT</dt>
+                  <dd class="selection-value">2012</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">GUESTS</dt>
+                  <dd class="selection-value">12 in 6 cabins</dd>
+                </div>
+                <div class="spec-container">
+                  <dt class="selection-spec">PRICE</dt>
+                  <dd class="selection-value">€21,000,000</dd>
+                </div>
+              </dl>
+            </li>
+          </ul>
+        </div>
 
         <button type="button">Yacht rental</button>
       </section>

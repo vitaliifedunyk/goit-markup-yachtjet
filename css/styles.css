@@ -1,8 +1,11 @@
+/* #region common */
 body {
   font-family: "Inter", sans-serif;
   background-color: #0e1823;
   background-image: url("../images/yacht-hero.jpg");
-  background-size: 100%;
+  max-width: 1440px;
+  width: 1440px;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
@@ -41,11 +44,12 @@ button {
 }
 
 .container {
-  width: 1400px;
+  width: 100%;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
+/* #endregion common */
 
 /* #region header */
 .header {
@@ -221,3 +225,102 @@ button {
   height: 470px;
 }
 /* #endregion about  */
+
+/* #region yacht-selection */
+.selection-container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.selection-title {
+  margin-top: 150px;
+  margin-bottom: 75px;
+  margin-left: 353px;
+  margin-right: 363px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.selection-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.selection-item {
+  border-radius: 24px;
+  width: 392px;
+  height: 508px;
+  background-color: #fdfdfd;
+}
+
+.selection-image {
+  border-radius: 24px;
+  width: 360px;
+  height: 268px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 32px 16px 32px;
+  border-bottom: 1px solid rgba(4, 3, 6, 0.1);
+  padding-bottom: 16px;
+}
+
+.selection-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #1b414b;
+}
+
+.selection-subname {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
+}
+
+.spec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 32px 32px 32px;
+}
+
+.spec-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selection-spec {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
+}
+
+.selection-value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #040306;
+}
+/* #endregion yacht-selection */
