@@ -5,7 +5,6 @@ body {
   background-image: url("../images/yacht-hero.jpg");
   background-repeat: no-repeat;
   background-size: 100% 800px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -43,11 +42,23 @@ button {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1240px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 /* #endregion common */
 
@@ -60,6 +71,7 @@ button {
   background-color: #fbfbfb;
   display: flex;
   align-items: center;
+  margin: 32px auto 0;
 }
 
 .header .container {
@@ -112,6 +124,7 @@ button {
 }
 .header-social-icons-list {
 }
+
 .header-social-icon-svg {
   fill: #1b414b;
 }
@@ -124,23 +137,104 @@ button {
 
 /* #region hero */
 .hero {
+  padding: 155px 0 180px;
 }
 .hero-title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+
+  width: 1000px;
+  margin: 0 auto 24px;
 }
 .hero-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.7);
+
+  width: 598px;
+  margin: 0 auto 48px;
 }
 .hero-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+
+  border-radius: 15px;
+  padding-block: 16px;
+  padding-inline: 40px;
+  width: 179px;
+  height: 52px;
+  background-color: #1b414b;
+  display: block;
+  margin: 0 auto;
 }
 /* #endregion hero */
 
 /* #region about */
 .about {
+  padding-bottom: 150px;
 }
+
+.about .container {
+  width: 100%;
+  max-width: 1340px;
+  height: 807px;
+  border-radius: 24px;
+  background-color: #fbfbfb;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
 .about-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #1b414b;
+  flex: 0 0 auto;
+  width: 580px;
 }
+
+.about-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 0 0 auto;
+  width: 404px;
+}
+
 .about-subtitle {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #1b414b;
 }
+
 .about-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #040306;
+  opacity: 0.4;
 }
 .about-img {
 }
@@ -150,22 +244,84 @@ button {
 .yacht-selection {
 }
 .selection-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+
+  width: 715px;
+  margin: 0 auto 75px;
 }
 .selection-list {
+  display: flex;
+  gap: 32px;
 }
 .selection-item {
+  border-radius: 24px;
+  width: 392px;
+  height: 508px;
+  background-color: #fbfbfb;
 }
 .selection-image {
+  margin: 16px 16px 32px 16px;
 }
+
+.selection-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 32px 32px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgba(4, 3, 6, 0.1);
+}
+
 .selection-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #1b414b;
 }
 .selection-subname {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
 }
 .spec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 32px;
+}
+
 .selection-spec {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
 }
 .selection-value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #040306;
 }
 .selection-btn {
 }
