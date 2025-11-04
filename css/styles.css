@@ -176,6 +176,12 @@ button {
   display: block;
   margin: 0 auto;
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
+}
 /* #endregion hero */
 
 /* #region about */
@@ -242,6 +248,7 @@ button {
 
 /* #region yacht-selection */
 .yacht-selection {
+  padding-bottom: 150px;
 }
 .selection-title {
   font-weight: 500;
@@ -257,6 +264,7 @@ button {
 .selection-list {
   display: flex;
   gap: 32px;
+  margin-bottom: 50px;
 }
 .selection-item {
   border-radius: 24px;
@@ -323,24 +331,88 @@ button {
   letter-spacing: 0.03em;
   color: #040306;
 }
+
 .selection-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+
+  border-radius: 15px;
+  padding-block: 16px;
+  padding-inline: 40px;
+  width: 181px;
+  height: 52px;
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  display: block;
+  margin: 0 auto;
+}
+
+.selection-btn:hover,
+.selection-btn:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
 }
 /* #endregion yacht-selection */
 
 /* #region benefits */
 .benefits {
+  padding-bottom: 150px;
+}
+.benefits .container {
+  max-width: 1340px;
 }
 .benefits-title {
 }
+.benefits-content {
+  display: flex;
+  align-items: center;
+}
 .benefits-list {
+  border-radius: 24px;
+  background-color: #1b414b;
+
+  width: 768px;
+  height: 424px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 90px 50px;
+  gap: 44px 32px;
+  margin-right: 32px;
 }
 .benefits-item {
+  width: calc((100% - 32px) / 2);
 }
 .benefits-number {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #fbfbfb;
+  margin-bottom: 18px;
+}
+.benefits-line {
+  background: rgba(251, 251, 251, 0.1);
+  border-radius: 18px;
+  width: 318px;
+  height: 2px;
+  margin-bottom: 18px;
 }
 .benefits-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  opacity: 0.8;
+
+  width: 292px;
 }
 .benefits-img {
+  border-radius: 24px;
+  width: 540px;
+  height: 424px;
 }
 /* #endregion benefits */
 
