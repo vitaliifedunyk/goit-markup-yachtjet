@@ -306,122 +306,130 @@
       <!-- #endregion benefits -->
 
       <!-- #region rentform -->
-      <section class="rentform visually-hidden">
-        <img
-          class="rentform-img"
-          srcset="
-            ./images/yacht-rent-form.jpg    1x,
-            ./images/yacht-rent-form@2x.jpg 2x
-          "
-          src="./images/yacht-rent-form.jpg"
-          alt=""
-          width="768"
-          height="534"
-        />
-        <form class="rentform-form">
-          <h2 class="rentform-title">Rent a yacht now</h2>
-          <input
-            class="rentform-input"
-            type="text"
-            name="user-fullname"
-            id="user-fullname"
-            placeholder="Full Name"
-            required
+      <section class="rentform">
+        <div class="container">
+          <img
+            class="rentform-img"
+            srcset="
+              ./images/yacht-rent-form.jpg    1x,
+              ./images/yacht-rent-form@2x.jpg 2x
+            "
+            src="./images/yacht-rent-form.jpg"
+            alt=""
+            width="768"
+            height="534"
           />
-          <input
-            class="rentform-input"
-            type="email"
-            name="user-email"
-            id="user-email"
-            placeholder="Email"
-            required
-          />
-          <input
-            class="rentform-input"
-            type="tel"
-            name="user-phone"
-            id="user-phone"
-            placeholder="Phone number"
-            required
-          />
-          <textarea
-            class="rentform-textarea"
-            name="Comment"
-            id="user-comment"
-            placeholder="Comment"
-          ></textarea>
-        </form>
-        <button class="rentform-btn" type="submit">Send</button>
+          <div class="rentform-wrapper">
+            <h2 class="rentform-title">Rent a yacht now</h2>
+            <form class="rentform-form">
+              <input
+                class="rentform-input"
+                type="text"
+                name="user-fullname"
+                id="user-fullname"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                class="rentform-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Email"
+                required
+              />
+              <input
+                class="rentform-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder="Phone number"
+                required
+              />
+              <textarea
+                class="rentform-textarea"
+                name="Comment"
+                id="user-comment"
+                placeholder="Comment"
+              ></textarea>
+            </form>
+            <button class="rentform-btn" type="submit">Send</button>
+          </div>
+        </div>
       </section>
       <!-- #endregion rentform -->
 
       <!-- #region reviews -->
-      <section id="reviews" class="reviews visually-hidden">
-        <h2 class="reviews-title">
-          YachtJet take pride in providing the best possible service and
-          experience to our customers
-        </h2>
-        <p class="reviews-text">
-          Our customers have enjoyed unforgettable moments on our yachts. Don't
-          just take our word for it - read on to find out what they have to say
-          about their journey with us.
-        </p>
-        <ul class="reviews-list">
-          <li class="reviews-item">
-            <img
-              class="reviews-avatar"
-              srcset="./images/john-wax.png 1x, ./images/john-wax@2x.png 2x"
-              src="./images/john-wax.png"
-              alt="John Wax"
-              width="56"
-              height="56"
-            />
-            <h3 class="reviews-name">John Wax</h3>
-            <p class="reviews-comment">
-              I rented the Lagoon 620 with my family for a week-long vacation
-              and it was the best decision ever. The yacht was spacious,
-              comfortable, and luxurious, and the crew took care of everything.
-            </p>
-          </li>
-          <li class="reviews-item">
-            <img
-              class="reviews-avatar"
-              srcset="
-                ./images/victoria-romashenko.png    1x,
-                ./images/victoria-romashenko@2x.png 2x
-              "
-              src="./images/victoria-romashenko.png"
-              alt="Victoria Romashenko"
-              width="56"
-              height="56"
-            />
-            <h3 class="reviews-name">Victoria Romashenko</h3>
-            <p class="reviews-comment">
-              The Sunseeker Manhattan 66 was the perfect choice for our romantic
-              getaway. The yacht was beautifully designed, with all the
-              amenities we needed, and the crew was attentive and friendly.
-            </p>
-          </li>
-          <li class="reviews-item">
-            <img
-              class="reviews-avatar"
-              srcset="
-                ./images/ihor-trachuk.png    1x,
-                ./images/ihor-trachuk@2x.png 2x
-              "
-              src="./images/ihor-trachuk.png"
-              alt="Ihor Trachuk"
-              width="56"
-              height="56"
-            />
-            <h3 class="reviews-name">Ihor Trachuk</h3>
-            <p class="reviews-comment">
-              The Azimut 80 was the most luxurious yacht I've ever been on. The
-              cabins were spacious and elegant, and the outdoor areas were
-              perfect for relaxing and entertaining. Worth every penny!
-            </p>
-          </li>
-        </ul>
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <h2 class="reviews-title">
+            YachtJet take pride in providing the best possible service and
+            experience to our customers
+          </h2>
+          <p class="reviews-text">
+            Our customers have enjoyed unforgettable moments on our yachts.
+            Don't just take our word for it - read on to find out what they have
+            to say about their journey with us.
+          </p>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <img
+                class="reviews-avatar"
+                srcset="./images/john-wax.png 1x, ./images/john-wax@2x.png 2x"
+                src="./images/john-wax.png"
+                alt="John Wax"
+                width="56"
+                height="56"
+              />
+              <h3 class="reviews-name">John Wax</h3>
+              <p class="reviews-comment">
+                I rented the Lagoon 620 with my family for a week-long vacation
+                and it was the best decision ever. The yacht was spacious,
+                comfortable, and luxurious, and the crew took care of
+                everything.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <img
+                class="reviews-avatar"
+                srcset="
+                  ./images/victoria-romashenko.png    1x,
+                  ./images/victoria-romashenko@2x.png 2x
+                "
+                src="./images/victoria-romashenko.png"
+                alt="Victoria Romashenko"
+                width="56"
+                height="56"
+              />
+              <h3 class="reviews-name">Victoria Romashenko</h3>
+              <p class="reviews-comment">
+                The Sunseeker Manhattan 66 was the perfect choice for our
+                romantic getaway. The yacht was beautifully designed, with all
+                the amenities we needed, and the crew was attentive and
+                friendly.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <img
+                class="reviews-avatar"
+                srcset="
+                  ./images/ihor-trachuk.png    1x,
+                  ./images/ihor-trachuk@2x.png 2x
+                "
+                src="./images/ihor-trachuk.png"
+                alt="Ihor Trachuk"
+                width="56"
+                height="56"
+              />
+              <h3 class="reviews-name">Ihor Trachuk</h3>
+              <p class="reviews-comment">
+                The Azimut 80 was the most luxurious yacht I've ever been on.
+                The cabins were spacious and elegant, and the outdoor areas were
+                perfect for relaxing and entertaining. Worth every penny!
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- #endregion reviews -->
     </main>

@@ -136,7 +136,7 @@ button {
 /* #endregion header */
 
 /* #region hero */
-.hero {
+.hero .container {
   padding: 155px 0 180px;
 }
 .hero-title {
@@ -190,9 +190,7 @@ button {
 }
 
 .about .container {
-  width: 100%;
   max-width: 1340px;
-  height: 807px;
   border-radius: 24px;
   background-color: #fbfbfb;
 }
@@ -239,15 +237,14 @@ button {
   font-size: 13px;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: #040306;
-  opacity: 0.4;
+  color: rgba(4, 3, 6, 0.4);
 }
 .about-img {
 }
 /* #endregion about */
 
 /* #region yacht-selection */
-.yacht-selection {
+.yacht-selection .container {
   padding-bottom: 150px;
 }
 .selection-title {
@@ -299,8 +296,7 @@ button {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #040306;
-  opacity: 0.4;
+  color: rgba(4, 3, 6, 0.4);
 }
 .spec-list {
   display: flex;
@@ -321,8 +317,7 @@ button {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #040306;
-  opacity: 0.4;
+  color: rgba(4, 3, 6, 0.4);
 }
 .selection-value {
   font-weight: 400;
@@ -358,10 +353,10 @@ button {
 
 /* #region benefits */
 .benefits {
-  padding-bottom: 150px;
 }
 .benefits .container {
   max-width: 1340px;
+  padding-bottom: 150px;
 }
 .benefits-title {
 }
@@ -404,8 +399,7 @@ button {
   font-size: 13px;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: #fbfbfb;
-  opacity: 0.8;
+  color: rgba(251, 251, 251, 0.8);
 
   width: 292px;
 }
@@ -419,36 +413,156 @@ button {
 /* #region rentform */
 .rentform {
 }
-.rentform-img {
+
+.rentform .container {
+  max-width: 1340px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 150px;
 }
+.rentform-img {
+  border-radius: 24px;
+  width: 768px;
+  height: 534px;
+  margin-right: 50px;
+}
+
+.rentform-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .rentform-form {
+  width: 472px;
+  height: 332px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 50px;
 }
 .rentform-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 50px;
 }
 .rentform-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: rgba(251, 251, 251, 0.4);
+
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  width: 472px;
+  height: 54px;
+  background-color: transparent;
+  padding: 18px;
 }
 .rentform-textarea {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: rgba(251, 251, 251, 0.4);
+
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  width: 472px;
+  height: 116px;
+  background-color: transparent;
+  padding: 18px;
+  resize: none;
+}
+
+.rentform-textarea:focus,
+.rentform-input:focus {
+  border: 1px solid rgba(251, 251, 251, 0.5);
+  color: #fbfbfb;
 }
 .rentform-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+
+  border-radius: 15px;
+  padding: 18px 75px;
+  width: 194px;
+  height: 56px;
+  background-color: #1b414b;
 }
+
+.rentform-btn:hover,
+.rentform-btn:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
+}
+
 /* #endregion rentform */
 
 /* #region reviews */
-.reviews {
+.reviews .container {
+  min-width: 1240px;
+  padding-bottom: 150px;
 }
 .reviews-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+
+  width: 854px;
+  margin: 0 auto 25px;
 }
 .reviews-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.4);
+
+  width: 571px;
+  margin: 0 auto 75px;
 }
 .reviews-list {
+  display: flex;
+  gap: 32px;
 }
 .reviews-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fbfbfb;
+  border-radius: 24px;
+  width: calc((100% - 64px) / 3);
+  padding: 32px 36px;
 }
+
 .reviews-avatar {
 }
 .reviews-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #040306;
+  margin: 24px 0 8px;
 }
 .reviews-comment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(4, 3, 6, 0.4);
 }
 /* #endregion reviews */
 
